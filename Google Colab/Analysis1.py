@@ -6,6 +6,7 @@ import re
 import tweepy 
 from tweepy import OAuthHandler 
 from textblob import TextBlob 
+import json
 
 class TwitterClient(object): 
 	''' 
@@ -18,9 +19,9 @@ class TwitterClient(object):
 		# keys and tokens from the Twitter Dev Console 
 
 		#MY API keys on my account haahhahaha
-		consumer_key = 'secret'
+		consumer_key = 'kqUMGE1g9Ye6mZ9IdIxWNamTK'
 		consumer_secret = 'ffMqQa8dlAsd4zysRFW47JM7Vk0M5MwSP0QKVOLjrufLSHsEMA'
-		access_token = 'secret'
+		access_token = '1156902832269774848-w0E7G6H024TGXg7ef6aM8KmCezVwoK'
 		access_token_secret = 'Bvos2WEu0uTzszmTsdiPS1l3PLu9n1uSfIZJd7FjpYAEr'
 
 		# attempt authentication 
@@ -94,7 +95,7 @@ class TwitterClient(object):
 
 def main(): 
 	# creating object of TwitterClient Class 
-	api = TwitterClient() 
+    api = TwitterClient() 
 	# calling function to get tweets 
 
 	#HERE
@@ -103,40 +104,71 @@ def main():
 	#HERE
 	#HERE
 	#HERE
-	tweets = api.get_tweets(query = 'elonmusk', count = 200) 
+    tweets = api.get_tweets(query = 'elonmusk', count = 200) 
 
 	# picking positive tweets from tweets 
-	ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
+    ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
 	# percentage of positive tweets 
-	print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets))) 
- 
-	# picking negative tweets from tweets 
-	ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative'] 
+    print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
+    PP = format(100*len(ptweets)/len(tweets))
+    # picking negative tweets from tweets 
+    ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative'] 
 	# percentage of negative tweets 
-	print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets))) 
- 
-
- # picking neutral tweets from tweets 
-	ytweets = [tweet for tweet in tweets if tweet['sentiment'] == 'neutral'] 
-	# percentage of neutral tweets 
-	print("Neutral tweets percentage: {} % \ ".format(100*(len(tweets) -(len( ntweets )+len( ptweets)))/len(tweets))) 
-
-	# printing first 5 positive tweets 
-	print("\n\nPositive tweets:") 
-	for tweet in ptweets[:10]: 
-		print(tweet['text']) 
+    print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
+    PN = format(100*len(ntweets)/len(tweets))
+    # picking neutral tweets from tweets 
+    ytweets = [tweet for tweet in tweets if tweet['sentiment'] == 'neutral'] 
+    # percentage of neutral tweets 
+    print("Neutral tweets percentage: {} % \ ".format(100*(len(tweets) -(len( ntweets )+len( ptweets)))/len(tweets)))
+    PY = format(100*len(ytweets)/len(tweets))
+    
+    # printing first 5 positive tweets 
+    PT = []
+    print("\n\nPositive tweets:") 
+    for tweet in ptweets[:10]: 
+        print(tweet['text'])
+        PT.append(tweet['text'])
   
-  # printing first 5 neutral tweets 
-	print("\n\nNeutral tweets:") 
-	for tweet in ytweets[:10]: 
-		print(tweet['text'])  
+  # printing first 5 neutral tweets
+    YT = []
+    print("\n\nNeutral tweets:") 
+    for tweet in ytweets[:10]: 
+        print(tweet['text'])
+        YT.append(tweet['text'])
+        
+        
   
   
   # printing first 5 negative tweets 
-	print("\n\nNegative tweets:") 
-	for tweet in ntweets[:10]: 
-		print(tweet['text']) 
+    NT = []
+    print("\n\nNegative tweets:") 
+    for tweet in ntweets[:10]: 
+       print(tweet['text'])
+       NT.append(tweet['text'])
+
+  #more
+    print("HI")
+    d = {
+    "SENTIMENTS": {
+    "positivesenti" : PP,
+    "neutralsenti" : PN,
+    "negativesenti" : PY
+        },
+        
+    "PICKEDTWEETS": {
+    "positivetweet" : PT,
+    "neutraltweets" : YT,
+    "negativetweets" : NT
+        }
+    }
+    
+  #  d['Positive_Sentiment'] = PP
+    json.dumps(d)
+    print(json.dumps(d))
+    print(json.dumps(d, indent = 1)) 
+    
+    
 
 if __name__ == "__main__": 
 	# calling main function 
-	main() 
+	main()
