@@ -8,6 +8,8 @@ Printing the SQite3 table: https://www.sqlitetutorial.net/sqlite-tutorial/sqlite
 Creating multiple columns: https://www.sqlitetutorial.net/sqlite-create-table/
 <br>
 Sample database: https://www.sqlitetutorial.net/sqlite-sample-database/
+<br>
+Further commands: https://www.sqlitetutorial.net/
 
 
 
