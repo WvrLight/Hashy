@@ -4,6 +4,9 @@ Please refer here for commands: https://www.sqlitetutorial.net/sqlite-commands/
 Creating sqlite database via python: https://www.sqlitetutorial.net/sqlite-python/creating-database/
 <br>
 Printing the SQite3 table: https://www.sqlitetutorial.net/sqlite-tutorial/sqlite-describe-table/
+<br>
+Creating multiple columns: https://www.sqlitetutorial.net/sqlite-create-table/
+
 
 
 ``` sqlite> .schema albums - to show the contents of the table in raw format ```
