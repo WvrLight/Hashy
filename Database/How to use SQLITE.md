@@ -33,7 +33,13 @@ sqlite> .header on
 sqlite> .mode column
 sqlite> pragma table_info('albums');
 ``` 
-
+<br>
+On showing the data on the table"
+```ruby
+sqlite> .header on
+sqlite> .mode column
+sqlite> SELECT * FROM experiments1;
+````
 <h> Problem current:
   - 
   - how to remove a table in a database? 
