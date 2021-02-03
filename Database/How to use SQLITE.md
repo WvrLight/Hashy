@@ -15,6 +15,8 @@ Inserting values into table: https://www.pythonforthelab.com/blog/storing-data-w
 <br>
 SQlite select: https://www.sqlitetutorial.net/sqlite-select/
 <br>
+(Another) Inserting values into table: https://www.sitepoint.com/getting-started-sqlite3-basic-commands/
+
 
 
 
