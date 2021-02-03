@@ -109,31 +109,31 @@ def main():
 	# picking positive tweets from tweets 
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
 	# percentage of positive tweets 
-    print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
+    #print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
     PP = format(100*len(ptweets)/len(tweets))
     # picking negative tweets from tweets 
     ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative'] 
 	# percentage of negative tweets 
-    print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
+    #print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
     PN = format(100*len(ntweets)/len(tweets))
     # picking neutral tweets from tweets 
     ytweets = [tweet for tweet in tweets if tweet['sentiment'] == 'neutral'] 
     # percentage of neutral tweets 
-    print("Neutral tweets percentage: {} % \ ".format(100*(len(tweets) -(len( ntweets )+len( ptweets)))/len(tweets)))
+    #print("Neutral tweets percentage: {} % \ ".format(100*(len(tweets) -(len( ntweets )+len( ptweets)))/len(tweets)))
     PY = format(100*len(ytweets)/len(tweets))
     
     # printing first 5 positive tweets 
     PT = []
-    print("\n\nPositive tweets:") 
+    #print("\n\nPositive tweets:") 
     for tweet in ptweets[:10]: 
-        print(tweet['text'])
+        #print(tweet['text'])
         PT.append(tweet['text'])
   
   # printing first 5 neutral tweets
     YT = []
-    print("\n\nNeutral tweets:") 
+    #print("\n\nNeutral tweets:") 
     for tweet in ytweets[:10]: 
-        print(tweet['text'])
+        #print(tweet['text'])
         YT.append(tweet['text'])
         
         
@@ -141,13 +141,13 @@ def main():
   
   # printing first 5 negative tweets 
     NT = []
-    print("\n\nNegative tweets:") 
+    #print("\n\nNegative tweets:") 
     for tweet in ntweets[:10]: 
-       print(tweet['text'])
+       #print(tweet['text'])
        NT.append(tweet['text'])
 
   #more
-    print("HI")
+    
     d = {
     "SENTIMENTS": {
     "positivesenti" : PP,
@@ -164,8 +164,170 @@ def main():
     
   #  d['Positive_Sentiment'] = PP
     json.dumps(d)
-    print(json.dumps(d))
+    #print(json.dumps(d))
     print(json.dumps(d, indent = 1)) 
+
+    #Separation
+    #Separation
+    #Separation
+
+
+    #percentage sentiment first:
+    d1 = {
+    "SENTIMENTS": {
+    "positivesenti" : PP,
+    "neitralsenti" : PN,
+    "negativesenti" : PY
+    }    
+    }
+    print("\n")
+    #d1 sentiments percentage
+    print(json.dumps(d1, indent = 1))
+
+
+
+    print("\n")
+    print("\n")
+    # PRINTING 10 POSITIVE PICKED TWEETS
+    # Creates a list containing 5 lists, each of 8 items, all set to 0
+    w, h = 10, 10;
+    Positive = [[0 for x in range(w)] for y in range(h)]
+    i = 0
+    #print("\n\nNegative tweets:") 
+    for tweet in ntweets[:10]: 
+       #print(tweet['text'])
+        Positive[0][i] = tweet['text']
+        i = i+1
+
+
+        positivetweets = {
+        "POSITIVETWEETS" : {
+        "p1" : Positive[0][0],
+        "p2" : Positive[0][1],
+        "p3" : Positive[0][2],
+        "p4" : Positive[0][3],
+        "p5" : Positive[0][4],
+        "p6" : Positive[0][5],
+        "p7" : Positive[0][6],
+        "p8" : Positive[0][7],
+        "p9" : Positive[0][8],
+        "p10" : Positive[0][9]
+        }
+    }
+
+    #posotivetweets pickedtweets
+    print(json.dumps(positivetweets, indent = 1))
+
+
+    # PRINTING 10 NEUTRAL PICKED TWEETS
+    # Creates a list containing 5 lists, each of 8 items, all set to 0
+    w, h = 10, 10;
+    Neutral = [[0 for x in range(w)] for y in range(h)]
+    i = 0
+    #print("\n\nNegative tweets:") 
+    for tweet in ntweets[:10]: 
+       #print(tweet['text'])
+        Neutral[0][i] = tweet['text']
+        i = i+1
+
+
+        neutraltweets = {
+        "NEUTRALTWEETS" : {
+        "y1" : Neutral[0][0],
+        "y2" : Neutral[0][1],
+        "y3" : Neutral[0][2],
+        "y4" : Neutral[0][3],
+        "y5" : Neutral[0][4],
+        "y6" : Neutral[0][5],
+        "y7" : Neutral[0][6],
+        "y8" : Neutral[0][7],
+        "y9" : Neutral[0][8],
+        "y10" : Neutral[0][9]
+        }
+    }
+
+    #negativetweets pickedtweets
+    print(json.dumps(neutraltweets, indent = 1))
+
+
+    # PRINTING 10 NEGATIVE PICKED TWEETS
+    # Creates a list containing 5 lists, each of 8 items, all set to 0
+    w, h = 10, 10;
+    Matrix = [[0 for x in range(w)] for y in range(h)]
+    i = 0
+    #print("\n\nNegative tweets:") 
+    for tweet in ntweets[:10]: 
+       #print(tweet['text'])
+        Matrix[0][i] = tweet['text']
+        i = i+1
+
+
+        negativetweets = {
+        "NEGATIVETWEETS" : {
+        "n1" : Matrix[0][0],
+        "n2" : Matrix[0][1],
+        "n3" : Matrix[0][2],
+        "n4" : Matrix[0][3],
+        "n5" : Matrix[0][4],
+        "n6" : Matrix[0][5],
+        "n7" : Matrix[0][6],
+        "n8" : Matrix[0][7],
+        "n9" : Matrix[0][8],
+        "n10" : Matrix[0][9]
+        }
+    }
+
+    #negativetweets pickedtweets
+    print(json.dumps(negativetweets, indent = 1))
+
+
+
+    #ALL DUMPER
+    pickedtweets = {
+    "POSITIVETWEETS" : {
+    "p1" : Positive[0][0],
+    "p2" : Positive[0][1],
+    "p3" : Positive[0][2],
+    "p4" : Positive[0][3],
+    "p5" : Positive[0][4],
+    "p6" : Positive[0][5],
+    "p7" : Positive[0][6],
+    "p8" : Positive[0][7],
+    "p9" : Positive[0][8],
+    "p10" : Positive[0][9]
+    },
+    "NEUTRALTWEETS" : {
+    "y1" : Neutral[0][0],
+    "y2" : Neutral[0][1],
+    "y3" : Neutral[0][2],
+    "y4" : Neutral[0][3],
+    "y5" : Neutral[0][4],
+    "y6" : Neutral[0][5],
+    "y7" : Neutral[0][6],
+    "y8" : Neutral[0][7],
+    "y9" : Neutral[0][8],
+    "y10" : Neutral[0][9]
+    },
+    "NEGATIVETWEETS" : {
+    "n1" : Matrix[0][0],
+    "n2" : Matrix[0][1],
+    "n3" : Matrix[0][2],
+    "n4" : Matrix[0][3],
+    "n5" : Matrix[0][4],
+    "n6" : Matrix[0][5],
+    "n7" : Matrix[0][6],
+    "n8" : Matrix[0][7],
+    "n9" : Matrix[0][8],
+    "n10" : Matrix[0][9]
+    }
+    }
+
+    #all dumper PICKEDTWEETS
+    print("\n\n\n")
+    print(json.dumps(pickedtweets, indent = 1))
+
+ 
+
     
     
 
