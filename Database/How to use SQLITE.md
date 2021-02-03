@@ -28,7 +28,11 @@ Another way to show the structure of a table is to use the following PRAGMA comm
 sqlite> .header on
 sqlite> .mode column
 sqlite> pragma table_info('albums');
-```
+``` 
+
+<h> Problem current:
+  - read the data of a table in a command line (hassle kapag idownload ko pa kasi)
+  - how to remove a table in a database? 
 
 
 
