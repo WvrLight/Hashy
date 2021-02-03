@@ -16,6 +16,8 @@ Inserting values into table: https://www.pythonforthelab.com/blog/storing-data-w
 SQlite select: https://www.sqlitetutorial.net/sqlite-select/
 <br>
 (Inserting)  Inserting values into table: https://www.sitepoint.com/getting-started-sqlite3-basic-commands/
+<br>
+Insert values into a SQLite table with a JSON column using Python: https://devopsheaven.com/sqlite/databases/json/python/api/2017/10/11/sqlite-json-data-python.html
 
 
 
