@@ -6,6 +6,8 @@ Creating sqlite database via python: https://www.sqlitetutorial.net/sqlite-pytho
 Printing the SQite3 table: https://www.sqlitetutorial.net/sqlite-tutorial/sqlite-describe-table/
 <br>
 Creating multiple columns: https://www.sqlitetutorial.net/sqlite-create-table/
+<br>
+Sample database: https://www.sqlitetutorial.net/sqlite-sample-database/
 
 
 
