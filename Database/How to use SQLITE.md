@@ -15,7 +15,7 @@ Inserting values into table: https://www.pythonforthelab.com/blog/storing-data-w
 <br>
 SQlite select: https://www.sqlitetutorial.net/sqlite-select/
 <br>
-(Another) Inserting values into table: https://www.sitepoint.com/getting-started-sqlite3-basic-commands/
+(Inserting)  Inserting values into table: https://www.sitepoint.com/getting-started-sqlite3-basic-commands/
 
 
 
@@ -35,7 +35,7 @@ sqlite> pragma table_info('albums');
 ``` 
 
 <h> Problem current:
-  - read the data of a table in a command line (hassle kapag idownload ko pa kasi)
+  - 
   - how to remove a table in a database? 
 
 
