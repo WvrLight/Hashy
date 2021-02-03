@@ -10,6 +10,9 @@ Creating multiple columns: https://www.sqlitetutorial.net/sqlite-create-table/
 Sample database: https://www.sqlitetutorial.net/sqlite-sample-database/
 <br>
 Further commands: https://www.sqlitetutorial.net/
+<br>
+Inserting values into table: https://www.pythonforthelab.com/blog/storing-data-with-sqlite/
+<br>
 
 
 
