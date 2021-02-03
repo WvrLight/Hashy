@@ -5,7 +5,7 @@ Creating sqlite database via python: https://www.sqlitetutorial.net/sqlite-pytho
 <br>
 Printing the SQite3 table: https://www.sqlitetutorial.net/sqlite-tutorial/sqlite-describe-table/
 
-<br>
+
 ``` sqlite> .schema albums - to show the contents of the table in raw format ```
 
 
