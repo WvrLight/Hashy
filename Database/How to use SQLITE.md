@@ -13,6 +13,8 @@ Further commands: https://www.sqlitetutorial.net/
 <br>
 Inserting values into table: https://www.pythonforthelab.com/blog/storing-data-with-sqlite/
 <br>
+SQlite select: https://www.sqlitetutorial.net/sqlite-select/
+<br>
 
 
 
