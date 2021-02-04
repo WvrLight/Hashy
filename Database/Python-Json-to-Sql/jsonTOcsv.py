@@ -1,4 +1,6 @@
 #https://konklone.io/json/  json to csv
+#https://towardsdatascience.com/how-to-export-pandas-dataframe-to-csv-2038e43d9c03
+
 
 from cherrypicker import CherryPicker
 import json
@@ -11,4 +13,5 @@ picker = CherryPicker(data)
 flat = picker['PICKEDTWEETS'].flatten().get()
 notflat = picker['PICKEDTWEETS'].get()
 df = pd.DataFrame(flat)
-df.to_csv('output.csv', index=False)
+#df.to_csv('output.csv', index=False)
+df.to_csv('output.csv', encoding='utf-8')
