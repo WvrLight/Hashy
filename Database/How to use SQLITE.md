@@ -43,6 +43,23 @@ sqlite> .header on
 sqlite> .mode column
 sqlite> SELECT * FROM experiments1;
 ```
+
+<br>
+
+On conversion simple
+```ruby
+sqlite3 dummy.db
+SQLite version 3.19.3 2017-06-27 16:48:08
+Enter “.help” for usage hints.
+sqlite> .mode csv
+sqlite> .separator |
+sqlite> .import dummy.csv ABC
+sqlite> select * from ABC;
+1|2|3
+4|5|6
+sqlite>
+```
+
 <h> Problem current:
   - 
   - how to remove a table in a database? 
