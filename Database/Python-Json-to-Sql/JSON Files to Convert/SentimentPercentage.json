@@ -1,7 +1,9 @@
 {
- "SENTIMENTS": {
-  "positivesenti": "35.55555555555556",
-  "neitralsenti": "6.666666666666667",
-  "negativesenti": "57.77777777777778"
- }
+ "SENTIMENTS": [
+  {
+   "positivesenti": "23.076923076923077",
+   "neitralsenti": "12.087912087912088",
+   "negativesenti": "64.83516483516483"
+  }
+ ]
 }
