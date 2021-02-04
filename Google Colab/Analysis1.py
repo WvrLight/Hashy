@@ -174,11 +174,12 @@ def main():
 
     #percentage sentiment first:
     d1 = {
-    "SENTIMENTS": {
+    "SENTIMENTS": [
+                   {
     "positivesenti" : PP,
-    "neitralsenti" : PN,
+    "neutralsenti" : PN,
     "negativesenti" : PY
-    }    
+                   }]    
     }
     print("\n")
     #d1 sentiments percentage
@@ -216,7 +217,7 @@ def main():
     }
 
     #posotivetweets pickedtweets
-    print(json.dumps(positivetweets, indent = 1))
+    #print(json.dumps(positivetweets, indent = 1))
 
 
     # PRINTING 10 NEUTRAL PICKED TWEETS
@@ -247,7 +248,7 @@ def main():
     }
 
     #negativetweets pickedtweets
-    print(json.dumps(neutraltweets, indent = 1))
+    #print(json.dumps(neutraltweets, indent = 1))
 
 
     # PRINTING 10 NEGATIVE PICKED TWEETS
@@ -278,12 +279,14 @@ def main():
     }
 
     #negativetweets pickedtweets
-    print(json.dumps(negativetweets, indent = 1))
+    #print(json.dumps(negativetweets, indent = 1))
 
 
 
     #ALL DUMPER
     pickedtweets = {
+    "PICKEDTWEETS" : [
+                      {
     "POSITIVETWEETS" : {
     "p1" : Positive[0][0],
     "p2" : Positive[0][1],
@@ -319,7 +322,8 @@ def main():
     "n8" : Matrix[0][7],
     "n9" : Matrix[0][8],
     "n10" : Matrix[0][9]
-    }
+    }}
+    ]
     }
 
     #all dumper PICKEDTWEETS
