@@ -11,7 +11,6 @@ with open('file.json') as file:
 
 picker = CherryPicker(data)
 flat = picker['PICKEDTWEETS'].flatten().get()
-notflat = picker['PICKEDTWEETS'].get()
 df = pd.DataFrame(flat)
 #df.to_csv('output.csv', index=False)
 df.to_csv('output.csv', encoding='utf-8')
