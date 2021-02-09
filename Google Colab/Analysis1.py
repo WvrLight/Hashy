@@ -195,7 +195,7 @@ def main():
     Positive = [[0 for x in range(w)] for y in range(h)]
     i = 0
     #print("\n\nNegative tweets:") 
-    for tweet in ntweets[:10]: 
+    for tweet in ptweets[:10]: 
        #print(tweet['text'])
         Positive[0][i] = tweet['text']
         i = i+1
@@ -226,7 +226,7 @@ def main():
     Neutral = [[0 for x in range(w)] for y in range(h)]
     i = 0
     #print("\n\nNegative tweets:") 
-    for tweet in ntweets[:10]: 
+    for tweet in ytweets[:10]: 
        #print(tweet['text'])
         Neutral[0][i] = tweet['text']
         i = i+1
