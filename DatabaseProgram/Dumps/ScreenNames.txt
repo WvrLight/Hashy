@@ -1,0 +1,14 @@
++-----------------+-------+
+| Screen Name     | Count |
++-----------------+-------+
+| ValorLeaks      |    36 |
+| negitaku        |    29 |
+| theScoreesports |    28 |
+| ex_Serenity     |    13 |
+| bangiwnl        |    12 |
+| PlayVALORANT    |    11 |
+| seb_fps         |    10 |
+| alexs0ghost     |    10 |
+| Slasher         |     9 |
+| SinonSOVA       |     9 |
++-----------------+-------+

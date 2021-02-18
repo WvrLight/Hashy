@@ -1,0 +1,23 @@
++-------+-----------------+----------------------------------------------------+
+| Count | Screen Name     | Text                                               |
++-------+-----------------+----------------------------------------------------+
+| 6947  | BlackEspanolito | RT @BlackEspanolito: ¡¡SORTEO LOS NUEVOS PACKS DE  |
+|       |                 | SKINS!!                                            |
+|       |                 | Para participar tenéis que dar RT y completar los  |
+|       |                 | pasos del enlace.                                  |
+|       |                 | Acaba el 23…                                       |
+| 6947  | BlackEspanolito | RT @BlackEspanolito: ¡¡SORTEO LOS NUEVOS PACKS DE  |
+|       |                 | SKINS!!                                            |
+|       |                 | Para participar tenéis que dar RT y completar los  |
+|       |                 | pasos del enlace.                                  |
+|       |                 | Acaba el 23…                                       |
+| 6947  | BlackEspanolito | RT @BlackEspanolito: ¡¡SORTEO LOS NUEVOS PACKS DE  |
+|       |                 | SKINS!!                                            |
+|       |                 | Para participar tenéis que dar RT y completar los  |
+|       |                 | pasos del enlace.                                  |
+|       |                 | Acaba el 23…                                       |
+| 651   | Sydeon          | RT @Sydeon: If you are good at valorant you are    |
+|       |                 | hot                                                |
+| 651   | Sydeon          | RT @Sydeon: If you are good at valorant you are    |
+|       |                 | hot                                                |
++-------+-----------------+----------------------------------------------------+
